@@ -70,6 +70,15 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		15622B102A646FD5008699C1 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				15FBFBD22A62019700E789E8 /* MainViewController.storyboard */,
+				15FBFBD02A62019700E789E8 /* MainViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
 		15F660D12A6341B100438B86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,14 +106,13 @@
 		15FBFBCB2A62019700E789E8 /* Zootopia */ = {
 			isa = PBXGroup;
 			children = (
+				15622B102A646FD5008699C1 /* MainPage */,
 				15622B0E2A6432B5008699C1 /* Videos */,
 				15F660D12A6341B100438B86 /* Model */,
 				15FBFBE62A6211E100E789E8 /* WebPage */,
 				15FBFBE12A620C0900E789E8 /* Cards */,
 				15FBFBCC2A62019700E789E8 /* AppDelegate.swift */,
 				15FBFBCE2A62019700E789E8 /* SceneDelegate.swift */,
-				15FBFBD02A62019700E789E8 /* MainViewController.swift */,
-				15FBFBD22A62019700E789E8 /* MainViewController.storyboard */,
 				15FBFBD52A62019800E789E8 /* Assets.xcassets */,
 				15FBFBD72A62019800E789E8 /* LaunchScreen.storyboard */,
 				15FBFBDA2A62019800E789E8 /* Info.plist */,
