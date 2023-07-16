@@ -40,7 +40,12 @@
                         <constraint firstAttribute="height" constant="30" id="3WS-cG-iPK"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="b1"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Go to Link"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="openWebTapped:" destination="-1" eventType="touchUpInside" id="znI-1K-7Uo"/>
                     </connections>
@@ -52,7 +57,12 @@
                         <constraint firstAttribute="height" constant="30" id="b2e-m1-kft"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="B2"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Go video"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="goToVideo:" destination="-1" eventType="touchUpInside" id="G1d-ns-rHC"/>
                     </connections>
