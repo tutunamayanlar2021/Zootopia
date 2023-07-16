@@ -19,7 +19,7 @@ class CardView: UIView{
     var openWebAction: ((_ urlString: String) -> ())?
     var videoName: String?
     weak var delegate: CardViewDelegate?
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -38,22 +38,20 @@ class CardView: UIView{
         }
     }
     @IBAction func openWebTapped(_ sender: Any) {
-        
         openWebAction?(url ?? "https://developer.apple.com/forums/thread/670047")
-        print("Button tapped url: \(url)")
+        print("Button tapped url: \(String(describing: url))")
         
     }
     
     @IBAction func goToVideo(_ sender: Any) {
         guard let videoName = animalLabel.text, !videoName.isEmpty else {
-                print("Video name is empty")
-                return
-            }
+            print("Video name is empty")
+            return
+        }
         
-
-            delegate?.cardViewDidSelectVideo(withName: videoName)
-       
+        delegate?.cardViewDidSelectVideo(withName: videoName)
+        
     }
     
-
+    
 }
