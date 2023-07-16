@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="Zootopia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBs-HR-oHK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1007"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cd-la-LtM" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zootopia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-QZ-2HK">
+                                                <rect key="frame" x="8" y="0.0" width="361" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="Cy1-vb-dns"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="HVs-QZ-2HK" firstAttribute="leading" secondItem="6cd-la-LtM" secondAttribute="leading" constant="8" id="5k3-2l-EHN"/>
+                                            <constraint firstAttribute="height" constant="1000" id="Evg-Fk-ZXd"/>
+                                            <constraint firstItem="HVs-QZ-2HK" firstAttribute="top" secondItem="6cd-la-LtM" secondAttribute="top" id="caN-D9-3HW"/>
+                                            <constraint firstAttribute="trailing" secondItem="HVs-QZ-2HK" secondAttribute="trailing" constant="8" id="t72-hz-d1M"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6cd-la-LtM" firstAttribute="top" secondItem="IBs-HR-oHK" secondAttribute="top" id="3Pr-gX-6yJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="6cd-la-LtM" secondAttribute="bottom" id="Aga-9l-vKE"/>
+                                    <constraint firstItem="6cd-la-LtM" firstAttribute="leading" secondItem="IBs-HR-oHK" secondAttribute="leading" id="kSZ-gW-R8g"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cd-la-LtM" secondAttribute="trailing" id="y6m-fn-XY2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IBs-HR-oHK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8IQ-kC-Iyd"/>
+                            <constraint firstItem="IBs-HR-oHK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Is7-RH-47u"/>
+                            <constraint firstItem="6cd-la-LtM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.959288" id="aOW-K5-Jvz"/>
+                            <constraint firstItem="IBs-HR-oHK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hCb-Ww-oV4"/>
+                            <constraint firstItem="IBs-HR-oHK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nSy-kR-X3m"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1100"/>
+                    <connections>
+                        <outlet property="contentHeightConstraint" destination="Evg-Fk-ZXd" id="dqN-BG-ceT"/>
+                        <outlet property="scrollView" destination="IBs-HR-oHK" id="yfA-cG-4oH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
