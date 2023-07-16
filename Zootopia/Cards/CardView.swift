@@ -48,7 +48,7 @@ class CardView: UIView{
             print("Video name is empty")
             return
         }
-        
+        print(videoName)
         delegate?.cardViewDidSelectVideo(withName: videoName)
         
     }

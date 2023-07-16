@@ -93,18 +93,20 @@ class MainViewController: UIViewController {
 //MARK: - CardViewDelegate
 extension MainViewController:CardViewDelegate{
     func cardViewDidSelectVideo(withName videoName: String) {
-        guard let videosURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Videos") else {
-            print("Videos directory not found")
-            return
-        }
-        
-        let player = AVPlayer(url: videosURL)
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        
-        present(playerViewController, animated: true) {
-            playerViewController.player?.play()
-        }
+        guard let videoURL = Bundle.main.url(forResource: videoName, withExtension: "mp4") else {
+                print("Video dosyası bulunamadı")
+                return
+            }
+        print(videoURL)
+            let player = AVPlayer(url: videoURL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            
+        self.present(playerViewController, animated: true) {
+                player.play()
+            }
+
     }
+   
 
 }
